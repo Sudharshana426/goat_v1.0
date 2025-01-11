@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Layout } from 'lucide-react';
 
+
 // Form Components
 import ProductRegistrationForm from './components/forms/ProductRegistrationForm';
 import SupplierInformationForm from './components/forms/SupplierInformationForm';
@@ -12,6 +13,7 @@ import StakeholderCollaborationForm from './components/forms/StakeholderCollabor
 import ComplianceMonitoringForm from './components/forms/ComplianceMonitoringForm';
 import AntiCounterfeitingForm from './components/forms/AntiCounterfeitingForm';
 import DashboardAnalyticsForm from './components/forms/DashboardAnalyticsForm';
+import SensorsData from './components/SensorsData';
 
 // Layout Components
 import Navbar from './components/Navbar';
@@ -187,12 +189,16 @@ function App() {
           </div>
         </div>
       </div>
-
+      
       {/* Form Content */}
       <main className="py-6">
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">{renderForm()}</div>
       </main>
+       <div className="App">
+      <SensorsData />
     </div>
+    </div>
+   
   );
 }
 
